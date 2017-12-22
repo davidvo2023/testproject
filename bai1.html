@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test animate</title>
+	
+</head>
+<body>
+	<button>click</button>
+	<div id="effect" style="width: 50px; height: 50px;background: red;border-radius: 50%;border: 1px solid yellow">
+		
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('button').click(function(){
+				$('#effect').animate({
+					marginLeft:'200px'
+				}, 600, 'easeInOutElastic');
+			});
+		})
+	</script>
+</body>
+</html>
